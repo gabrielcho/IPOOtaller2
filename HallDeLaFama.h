@@ -10,7 +10,7 @@
 
 /*
   Clase: HallDeLaFama
-  Responsabilidad: Mantener un archivo en disco con la lista de los 10 mejores ganadores y sus puntajes. Debe crearlo 
+  Responsabilidad: Mantener un archivo en disco con la lista de los 10 mejores ganadores y sus puntajes. Debe crearlo
   si no existe, actualizarlo y salvarlo. Y debe mantenerlo ordenado de mayor a menor puntaje. Se le puede pedir añadir
   un nuevo ganador con su puntaje. Se le puede pedir que retorne la lista de ganadores y puntajes.
   Colaboración: posee un archivo. Es propietario del archivo, de modo que se encarga de cerrarlo en el destructor.
@@ -29,13 +29,13 @@ class HallDeLaFama
 {
   private:
     string archivo;
-    string ganadores[10];
-    int puntos[10];
+    string ganadores[10] = {};
+    int puntos[10] = {};
     int numeroDeGanadores;  // Un número entre 0 y 10
-    
+
   public:
     /**
-        Lee un archivo (si ya existe) con los 10 mejores ganadores, y los ordena. 
+        Lee un archivo (si ya existe) con los 10 mejores ganadores, y los ordena.
         El formato del archivo es una línea con cada ganador, ordenado de mayor a menor puntos. Cada línea es:
         nombre del ganador\tpuntos\n
         Es decir, hay un tabulador que separa el nombre del ganador de su puntaje.
@@ -55,7 +55,7 @@ class HallDeLaFama
         su nombre, un carácter tabulador y su puntaje.
     */
     string listaDeGanadores();
-    
+
   protected:
     /**
         Ordena los puntos (y sus correspondientes ganadores) de mayor a menor.
@@ -65,4 +65,3 @@ class HallDeLaFama
 
 
 #endif
-

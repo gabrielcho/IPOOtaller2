@@ -1,8 +1,0 @@
-/home/vagon/Desktop/C++/Taller2/HallDeLaFama.cpp: In constructor ‘HallDeLaFama::HallDeLaFama(std::__cxx11::string)’:
-/home/vagon/Desktop/C++/Taller2/HallDeLaFama.cpp:16:24: error: expected ‘;’ before ‘}’ token
-   numeroDeGanadores = 0
-                        ^
-                        ;
-/home/vagon/Desktop/C++/Taller2/HallDeLaFama.cpp:18:1:
- }
- ~

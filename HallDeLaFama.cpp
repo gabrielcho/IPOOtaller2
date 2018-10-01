@@ -26,18 +26,61 @@ HallDeLaFama::~HallDeLaFama()
 
 void HallDeLaFama::nuevoGanador(string nombre, int puntaje)
 {
-// ToDo para el Taller2
+
+  for(int pos = 0; pos <= numeroDeGanadores ; pos++)
+  {
+
+    if(puntos[pos] == 0)
+    {
+      numeroDeGanadores++;
+      puntos[pos] = puntaje;
+      ganadores[pos] = nombre;
+      return;
+    }
+
+    if (numeroDeGanadores == 10)
+      return;
+
+    if( (ganadores[pos] == nombre) and (puntaje > puntos[pos]))
+      {
+      puntos[pos] = puntaje;
+      return;
+      }
+
+
+      if (( pos == 9 ) and (puntaje > puntos[pos]) )
+      {
+        ganadores[pos] = nombre;
+        puntos[pos] = puntaje;
+        return;
+      }
+  }
 }
 
 
 void HallDeLaFama::ordenar()
 {
-// ToDo para el Taller2
-}
+  int aux;
+      for (int orden1=0;orden1<numeroDeGanadores;orden1++)
+      {
+          for (int orden2=0;orden2<numeroDeGanadores;orden2++)
+          {
+              if (puntos[orden2]<puntos[orden2+1])
+              {
+                  aux=puntos[orden2];
+                  puntos[orden2]=puntos[orden2+1];
+                  puntos[orden2+1]=aux;
+
+              }
+
+          }
+
+      } }
 
 
 string HallDeLaFama::listaDeGanadores()
 {
+ordenar();
   string resultado = "";
 
   for(int cual=0; cual<numeroDeGanadores; cual++)
