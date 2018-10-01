@@ -63,19 +63,18 @@ void HallDeLaFama::ordenar()
   int aux;
       for (int orden1=0;orden1<numeroDeGanadores;orden1++)
       {
-          for (int orden2=0;orden2<numeroDeGanadores;orden2++)
+        for (int orden2=0;orden2<numeroDeGanadores;orden2++)
+        {
+          if (puntos[orden2]<puntos[orden2+1])
           {
-              if (puntos[orden2]<puntos[orden2+1])
-              {
-                  aux=puntos[orden2];
-                  puntos[orden2]=puntos[orden2+1];
-                  puntos[orden2+1]=aux;
-
-              }
-
+            aux=puntos[orden2];
+            puntos[orden2]=puntos[orden2+1];
+            ganadores[orden2]=ganadores[orden2+1];
+            puntos[orden2+1]=aux;
           }
-
-      } }
+        }
+      }
+}
 
 
 string HallDeLaFama::listaDeGanadores()
