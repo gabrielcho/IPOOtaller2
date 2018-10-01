@@ -1,3 +1,30 @@
-/usr/bin/ld: /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/Scrt1.o: in function `_start':
-(.text+0x24): undefined reference to `main'
-collect2: error: ld returned 1 exit status
+In file included from /home/admincenesis/Escritorio/IPOOtaller2/Test/Test_HallDeLaFama.cpp:18:0:
+/home/admincenesis/Escritorio/IPOOtaller2/Test/../HallDeLaFama.h:32:29: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     string ganadores[10] = {};
+                             ^
+/home/admincenesis/Escritorio/IPOOtaller2/Test/../HallDeLaFama.h:33:23: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     int puntos[10] = {};
+                       ^
+/home/admincenesis/Escritorio/IPOOtaller2/Test/../HallDeLaFama.h:32:29: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+     string ganadores[10] = {};
+                             ^
+/home/admincenesis/Escritorio/IPOOtaller2/Test/../HallDeLaFama.h:33:23: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+     int puntos[10] = {};
+                       ^
+In file included from /home/admincenesis/Escritorio/IPOOtaller2/HallDeLaFama.cpp:11:0:
+/home/admincenesis/Escritorio/IPOOtaller2/HallDeLaFama.h:32:29: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     string ganadores[10] = {};
+                             ^
+/home/admincenesis/Escritorio/IPOOtaller2/HallDeLaFama.h:33:23: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     int puntos[10] = {};
+                       ^
+/home/admincenesis/Escritorio/IPOOtaller2/HallDeLaFama.h:32:29: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+     string ganadores[10] = {};
+                             ^
+/home/admincenesis/Escritorio/IPOOtaller2/HallDeLaFama.h:33:23: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+     int puntos[10] = {};
+                       ^
+/home/admincenesis/Escritorio/IPOOtaller2/HallDeLaFama.cpp: In member function ‘std::__cxx11::string HallDeLaFama::listaDeGanadores()’:
+/home/admincenesis/Escritorio/IPOOtaller2/HallDeLaFama.cpp:87:65: error: ‘to_string’ was not declared in this scope
+     resultado += ganadores[cual] + "\t" + to_string(puntos[cual]) + "\n";
+                                                                 ^

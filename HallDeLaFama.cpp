@@ -10,7 +10,6 @@
 
 #include "HallDeLaFama.h"
 
-
 HallDeLaFama::HallDeLaFama(string archivo)
 {
   numeroDeGanadores = 0;
@@ -79,7 +78,7 @@ void HallDeLaFama::ordenar()
 
 string HallDeLaFama::listaDeGanadores()
 {
-ordenar();
+
   string resultado = "";
 
   for(int cual=0; cual<numeroDeGanadores; cual++)
