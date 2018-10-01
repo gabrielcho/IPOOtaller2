@@ -60,6 +60,7 @@ void HallDeLaFama::nuevoGanador(string nombre, int puntaje)
 void HallDeLaFama::ordenar()
 {
   int aux;
+  string auxname;
       for (int orden1=0;orden1<numeroDeGanadores;orden1++)
       {
         for (int orden2=0;orden2<numeroDeGanadores;orden2++)
@@ -67,9 +68,11 @@ void HallDeLaFama::ordenar()
           if (puntos[orden2]<puntos[orden2+1])
           {
             aux=puntos[orden2];
+            auxname=ganadores[orden2];
             puntos[orden2]=puntos[orden2+1];
             ganadores[orden2]=ganadores[orden2+1];
             puntos[orden2+1]=aux;
+            ganadores[orden2+1]=auxname;
           }
         }
       }
@@ -78,7 +81,7 @@ void HallDeLaFama::ordenar()
 
 string HallDeLaFama::listaDeGanadores()
 {
-
+ ordenar();
   string resultado = "";
 
   for(int cual=0; cual<numeroDeGanadores; cual++)
