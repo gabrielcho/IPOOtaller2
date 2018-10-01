@@ -11,7 +11,7 @@
 
 /*
   Pruebas para el juego Tetris
-  Para compilar: 
+  Para compilar:
   g++ -std=c++11 ../HallDeLaFama.cpp Test_HallDeLaFama.cpp -o Test_HallDeLaFama
 */
 
@@ -28,16 +28,13 @@ int main(int numeroArgumentos, char *argumentos[])
   hallDeLaFama.nuevoGanador("AAA", 10);
   hallDeLaFama.nuevoGanador("BBB", 20);
   hallDeLaFama.nuevoGanador("DDD", 40);
-  
+
   int puntaje = 5;  // El puntaje lo genera el juego
   string nombre;    // pero el nombre lo proporciona el usuario. Ello es un punto de entrada para hackers, como enseguida veremos.
   cout << "Tu puntaje ha sido de " << puntaje << ". Dime tu nombre: ";
   getline(cin, nombre);
   hallDeLaFama.nuevoGanador(nombre, puntaje);
   cout << hallDeLaFama.listaDeGanadores();
-  
+
   return 0;
 }
-
-
-

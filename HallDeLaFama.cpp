@@ -26,7 +26,7 @@ HallDeLaFama::~HallDeLaFama()
 
 void HallDeLaFama::nuevoGanador(string nombre, int puntaje)
 {
-// ToDo para el Taller2u
+// ToDo para el Taller2
 }
 
 
