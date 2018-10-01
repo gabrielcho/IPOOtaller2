@@ -28,12 +28,20 @@ int main(int numeroArgumentos, char *argumentos[])
   hallDeLaFama.nuevoGanador("AAA", 10);
   hallDeLaFama.nuevoGanador("BBB", 20);
   hallDeLaFama.nuevoGanador("DDD", 40);
-
-  int puntaje = 5;  // El puntaje lo genera el juego
+  hallDeLaFama.nuevoGanador("XD", 100);
+  hallDeLaFama.nuevoGanador("lel", 200);
+  hallDeLaFama.nuevoGanador("lil", 300);
+  hallDeLaFama.nuevoGanador("jaja uy sisa", 400);
+  hallDeLaFama.nuevoGanador("antepenultimo", 500);
+  hallDeLaFama.nuevoGanador("xddddd", 600);
+hallDeLaFama.nuevoGanador("vida hpta", 2000);
+  int puntaje = 1000;  // El puntaje lo genera el juego
   string nombre;    // pero el nombre lo proporciona el usuario. Ello es un punto de entrada para hackers, como enseguida veremos.
   cout << "Tu puntaje ha sido de " << puntaje << ". Dime tu nombre: ";
   getline(cin, nombre);
   hallDeLaFama.nuevoGanador(nombre, puntaje);
+
+
   cout << hallDeLaFama.listaDeGanadores();
 
   return 0;
