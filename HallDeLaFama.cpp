@@ -12,8 +12,8 @@
 
 HallDeLaFama::HallDeLaFama(string archivo)
 {
-  numeroDeGanadores = 0
-// ToDo para el PROYECTO (no hace falta sshacerla para el Taller2)
+  numeroDeGanadores = 0;
+// ToDo para el PROYECTO (no hace falta hacerla para el Taller2)
 }
 
 
