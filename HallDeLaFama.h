@@ -11,7 +11,7 @@
 /*
   Clase: HallDeLaFama
   Responsabilidad: Mantener un archivo en disco con la lista de los 10 mejores ganadores y sus puntajes. Debe crearlo
-  si no existe, actualizarlo y salvarlo. Y debe mantenerlo ordenado de mayor a menor puntaje. Se le puede pedir añadir
+  si no existe, actualizarlo y salvarlo. Y debe mantenerlo ordenado de mayor a menor puntaje. Se le puede pedir añadir lel
   un nuevo ganador con su puntaje. Se le puede pedir que retorne la lista de ganadores y puntajes.
   Colaboración: posee un archivo. Es propietario del archivo, de modo que se encarga de cerrarlo en el destructor.
 */
