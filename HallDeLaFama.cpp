@@ -3,9 +3,15 @@
   Autor: Ángel García Baños
   Email: angel.garcia@correounivalle.edu.co
   Fecha creación: 2018-02-28
-  Fecha última modificación: 2018-03-05
+  Fecha última modificación: 2019-02-07
   Versión: 0.1
   Licencia: GPL
+
+  //////////////////////////////////////////////////
+  _Edición_
+  Estudiantes:  Gabriel Arango  -  1823077   
+                Daniel Tabares  -  1824898
+
 */
 
 #include "HallDeLaFama.h"
@@ -19,7 +25,8 @@ HallDeLaFama::HallDeLaFama(string archivo)
 
 HallDeLaFama::~HallDeLaFama()
 {
-// ToDo para el PROYECTO (no hace falta hacerla para el Taller2)
+// ToDo para el PROYECTO (no hace falta hacerla para el Taller2)asd
+
 }
 
 
@@ -57,7 +64,7 @@ void HallDeLaFama::nuevoGanador(string nombre, int puntaje)
 void HallDeLaFama::ordenar()
 {
   int aux;
-  string auxname;
+  string nombreaux;
       for (int orden1=0;orden1<numeroDeGanadores;orden1++)
       {
         for (int orden2=0;orden2<numeroDeGanadores;orden2++)
@@ -65,11 +72,11 @@ void HallDeLaFama::ordenar()
           if (puntos[orden2]<puntos[orden2+1])
           {
             aux=puntos[orden2];
-            auxname=ganadores[orden2];
+            nombreaux=ganadores[orden2];
             puntos[orden2]=puntos[orden2+1];
             ganadores[orden2]=ganadores[orden2+1];
             puntos[orden2+1]=aux;
-            ganadores[orden2+1]=auxname;
+            ganadores[orden2+1]=nombreaux;
           }
         }
       }

@@ -2,8 +2,15 @@
   Archivo: HallDeLaFama.h
   Autor: Ángel García Baños
   Email: angel.garcia@correounivalle.edu.co
+
+  
+  //////////////////////////////////////////////////
+  _Edición_
+  Estudiantes:  Gabriel Arango  -  1823077   
+                Daniel Tabares  -  1824898
+  
   Fecha creación: 2018-02-24
-  Fecha última modificación: 2018-02-26
+  Fecha última modificación: 2019-02-07
   Versión: 0.1
   Licencia: GPL
 */
